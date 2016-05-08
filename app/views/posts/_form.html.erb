@@ -1,0 +1,18 @@
+<h1>New Post</h1>
+
+<% if false %>
+HTML ja RUBY tekstia sekaisin 
+form_for rails helperi datan tallentamisessa databaseen.
+@post referoi malliin. Tarvii actionin toimiakseen.
+title ja body db -> tallentaa tietoa db/migration 
+<% end %>
+
+<%= form_for @post do |f| %>  
+	<%= f.label :title %> <br>
+	<%= f.text_field :title %> <br>
+	<br>
+	<%= f.label :body %><br>
+	<%= f.text_area :body %><br>
+	<br>
+	<%= f.submit %>
+<% end %>
